@@ -350,7 +350,8 @@ private:
   // never comes back to this sink: store it directly, as mads-logger did.
   // Must not throw: called by the destructor.
   void log_own_shutdown() noexcept {
-    if (!_connected)
+    // nothing logged (e.g. the offline self-test): leave the database alone
+    if (!_connected || _topics.empty())
       return;
     try {
       json payload = {{"name", _params.value("agent_name", PLUGIN_NAME)},

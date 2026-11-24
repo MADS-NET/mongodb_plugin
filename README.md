@@ -1,3 +1,6 @@
+[![Build and Release](https://github.com/MADS-NET/mongodb_plugin/actions/workflows/release.yml/badge.svg)](https://github.com/MADS-NET/mongodb_plugin/actions/workflows/release.yml) ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FMADS-NET%2F.github%2Fmain%2Fprofile%2Fpackages.json&query=%24.packages.%5B'mongodb.plugin'%5D.type&label=mads%20package&logo=C%2B%2B)
+
+
 # mongodb plugin for MADS
 
 MongoDB plugins for [MADS](https://github.com/MADS-NET/MADS), formerly part of
@@ -26,7 +29,19 @@ Currently, the supported platforms are:
 * **Windows**
 
 
-## Installation
+## Package install
+
+With MADS v3.0.0 or later, install both plugins with:
+
+```bash
+mads package --install mongodb.plugin
+```
+
+Release ZIPs for Linux (x86_64, arm64), macOS (universal) and Windows
+(x86_64) are built by CI for each `v*.*.*` tag.
+
+
+## Install from source
 
 Linux and MacOS:
 

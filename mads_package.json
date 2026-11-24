@@ -1,0 +1,30 @@
+{
+  "name": "mongodb_plugin",
+  "requirements": {
+    "Common": {
+      "note": [
+        "Requires MADS 3.0.0 or later",
+        "Provides mongodb.plugin (MongoDB logger, also run by `mads logger`) and replay.plugin",
+        "Needs a reachable MongoDB server"
+      ]
+    },
+    "Windows": {
+      "note": ["Requires Windows 10 or later"],
+      "commands": []
+    },
+    "Linux": {
+      "note": ["Requires Ubuntu 22.04 or later (OpenSSL 3)"],
+      "commands": []
+    },
+    "macOS": {
+      "note": [
+        "Requires macOS 10.15 or later",
+        "You might need to remove the quarantine protection on the plugins once installed"
+      ],
+      "commands": [
+        "xattr -d com.apple.quarantine $(mads -p)/lib/mongodb.plugin",
+        "xattr -d com.apple.quarantine $(mads -p)/lib/replay.plugin"
+      ]
+    }
+  }
+}
