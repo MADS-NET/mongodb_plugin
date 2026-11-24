@@ -1,0 +1,109 @@
+-- The CXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMAKE_BUILD_TYPE: Release
+-- CMAKE_INSTALL_PREFIX: /Users/p4010/usr/local
+CMake Warning at CMakeLists.txt:37 (message):
+  No PLUGIN_SUFFIX set, using default plugin name.  In multi-platform
+  environment with OTA plugins it is advised to set PLUGIN_SUFFIX to the
+  architecture, e.g.  arm64, x86_64, etc.
+
+
+-- Using the multi-header code from /Users/p4010/Develop/MADS_packages/mongodb_plugin/build/_deps/json-src/include/
+-- The C compiler identification is AppleClang 21.0.0.21000401
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_LLD_LINKER_SUPPORT
+-- Performing Test HAVE_LLD_LINKER_SUPPORT - Failed
+-- Using bundled libbson
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Performing Test BSON_HAVE_TIMESPEC
+-- Performing Test BSON_HAVE_TIMESPEC - Success
+-- Looking for gmtime_r
+-- Looking for gmtime_r - found
+-- Looking for rand_r
+-- Looking for rand_r - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for strlcpy
+-- Looking for strlcpy - found
+-- Looking for stdbool.h
+-- Looking for stdbool.h - found
+-- Looking for clock_gettime
+-- Looking for clock_gettime - found
+-- Looking for strnlen
+-- Looking for strnlen - found
+-- Looking for aligned_alloc
+-- Looking for aligned_alloc - found
+-- Looking for sched_getcpu
+-- Looking for sched_getcpu - not found
+-- libmongoc version (from VERSION_CURRENT file): 2.6.0-pre
+-- Enabling zlib compression (bundled)
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file stdarg.h
+-- Looking for include file stdarg.h - found
+-- libmongoc TLS : SecureTransport
+-- Using SASL backend : OFF
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- Looking for res_nsearch
+-- Looking for res_nsearch - found
+-- Looking for res_search
+-- Looking for res_search - found
+-- Looking for res_ndestroy
+-- Looking for res_ndestroy - found
+-- Looking for res_nclose
+-- Looking for res_nclose - found
+-- Detected parameters: accept (int, struct sockaddr *, socklen_t *)
+-- Searching for libmongocrypt
+-- libmongocrypt not found. Configuring without In-Use Encryption support.
+-- Performing Test MONGOC_HAVE_SS_FAMILY
+-- Performing Test MONGOC_HAVE_SS_FAMILY - Success
+-- SASL disabled
+-- Enabling utf8proc (bundled)
+-- Adding -fPIC to compilation of mongoc_static components
+-- Build files generated for:
+-- 	build system: Ninja
+-- The following features have been enabled:
+
+ * TLS, for secure network communication (SecureTransport)
+ * Cryptography, cryptographic primitives (SecureTransport)
+
+-- The following features have been disabled:
+
+ * AWS Authentication, authenticate with MongoDB servers using credentials from AWS instance metadata. (Manually disabled)
+ * SASL Authentication, authenticate with MongoDB servers using SASL: “Simple Authentication and Security Layer” (OFF)
+
+-- bsoncxx version: 4.4.0
+-- bsoncxx soversion: 1
+-- Auto-configuring bsoncxx to use C++17 std library polyfills since C++17 is active and user didn't specify otherwise
+-- Using bson targets imported via add_subdirectory() without version checks
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- mongocxx version: 4.4.0
+-- mongocxx soversion: 1
+-- Using mongoc targets imported via add_subdirectory() without version checks
+-- Build files generated for:
+-- 	build system: Ninja
+-- Configuring done (20.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/p4010/Develop/MADS_packages/mongodb_plugin/build
